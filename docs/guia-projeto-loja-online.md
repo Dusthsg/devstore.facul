@@ -26,11 +26,11 @@ Times fixos do início ao fim fazem cada pessoa aprender só uma fatia do sistem
 ```
 ┌─────────────────────┐    ┌─────────────────────┐
 │      BACKEND        │    │      FRONTEND       │
-│  Pessoa 1 (coringa)  │    │  Pessoa 5             │
-│  Pessoa 2             │    │  Pessoa 6              │
-│  Pessoa 3              │    │  Pessoa 7               │
-│  Pessoa 4                │    │  Pessoa 8                │
-│                            │    │  Pessoa 9                 │
+│  Ryan (coringa)      │    │  Bruno                │
+│  Edmilson              │    │  João                  │
+│  Luna                    │    │  Danilo                 │
+│  Luiz                      │    │  Guilherme               │
+│                              │    │  Aldi                      │
 └─────────────────────┘    └─────────────────────┘
            │                         │
            └───────────┬─────────────┘
@@ -80,9 +80,11 @@ Times fixos do início ao fim fazem cada pessoa aprender só uma fatia do sistem
 └───────────────┘   └───────────────┘   └───────────────┘
 ```
 
-**Como formar o time de Segurança:** puxem 1 pessoa do Backend da Fase 1 e 1 pessoa do Frontend da Fase 1 — não as duas do mesmo lado. Assim o time nasce entendendo tanto a parte de servidor (onde mora a maior parte do trabalho de segurança: hash de senha, JWT, SQL Injection) quanto a de cliente (XSS, CSRF, validação de formulário). Se só vier gente do frontend, por exemplo, o time perde intimidade com autenticação no servidor logo de cara.
+**Como formar o time de Segurança:** puxem 1 pessoa do Backend da Fase 1 (Ryan, Edmilson, Luna ou Luiz) e 1 pessoa do Frontend da Fase 1 (Bruno, João, Danilo, Guilherme ou Aldi) — não as duas do mesmo lado. Assim o time nasce entendendo tanto a parte de servidor (onde mora a maior parte do trabalho de segurança: hash de senha, JWT, SQL Injection) quanto a de cliente (XSS, CSRF, validação de formulário). Se só vier gente do frontend, por exemplo, o time perde intimidade com autenticação no servidor logo de cara.
 
-**Por que o Frontend fica com 4 e o Backend com 3:** o Frontend começou com mais gente (5) e tem mais superfície de trabalho na Fase 2 (checkout, perfil, histórico, dashboard com gráficos, responsividade) — faz sentido manter o time maior lá. O coringa continua no Backend.
+*Quem serão essas 2 pessoas é decisão do time — o critério acima é só a regra de composição, não uma escolha de nomes já feita.*
+
+**Por que o Frontend fica com 4 e o Backend com 3:** o Frontend começou com mais gente (5) e tem mais superfície de trabalho na Fase 2 (checkout, perfil, histórico, dashboard com gráficos, responsividade) — faz sentido manter o time maior lá. O coringa (Ryan) continua no Backend.
 
 **Backend foca em:**
 - Regras de negócio mais complexas
@@ -222,22 +224,18 @@ XP encaixa bem com Scrum aqui porque a equipe é pequena e iniciante — as prá
 
 ---
 
-## 6. Sugestão de Stack Técnica (simples para iniciantes)
+## 6. Stack Técnica (confirmada)
 
-Critério: poucas peças móveis, muita documentação em português/inglês, curva de aprendizado curta.
-
-| Camada | Sugestão | Por quê |
-|---|---|---|
-| **Frontend** | React + Vite | Muito material de estudo, comunidade enorme, Vite é rápido e simples de configurar |
-| **Estilização** | Tailwind CSS | Evita escrever CSS do zero, resultado profissional rápido |
-| **Backend** | Node.js + Express | Mesma linguagem do frontend (JavaScript) — menos contexto para trocar de cabeça |
-| **Banco de dados** | PostgreSQL (ou SQLite para começar) | SQLite não exige servidor — ótimo pra Fase 1; migrem para PostgreSQL na Fase 2 se quiserem algo mais "produção" |
-| **ORM** | Prisma | Facilita muito trabalhar com banco sem escrever SQL puro toda hora, e gera modelos automaticamente |
-| **Autenticação** | JWT (jsonwebtoken) + bcrypt para hash de senha | Padrão simples e amplamente documentado |
-| **Versionamento** | Git + GitHub (branches por feature, Pull Requests) | Já treina o fluxo de trabalho usado no mercado |
-| **Gestão de tarefas** | GitHub Projects ou Trello | Gratuito, integra fácil com o repositório |
-
-**Alternativa ainda mais simples**, se quiserem reduzir o número de tecnologias diferentes: **Next.js** (front + back no mesmo framework) + **Prisma** + **SQLite/PostgreSQL**. Isso reduz a "costura" entre frontend e backend, mas exige aprender o modelo de rotas do Next.
+| Camada | Tecnologia |
+|---|---|
+| **Frontend** | React + Vite |
+| **Estilização** | Tailwind CSS |
+| **Backend** | Node.js + Express |
+| **Banco de dados** | PostgreSQL (ou SQLite para começar) — SQLite não exige servidor, ótimo pra Fase 1; migrem para PostgreSQL na Fase 2 se quiserem algo mais "produção" |
+| **ORM** | Prisma |
+| **Autenticação** | JWT (jsonwebtoken) + bcrypt para hash de senha |
+| **Versionamento** | Git + GitHub (branches por feature, Pull Requests) |
+| **Gestão de tarefas** | GitHub Projects |
 
 ---
 
@@ -304,7 +302,7 @@ Sempre que tomarem uma decisão técnica importante (ex: "por que escolhemos JWT
 ## 10. Checklist Rápido de Kickoff
 
 - [ ] Definir duração do sprint
-- [ ] Escolher e configurar a stack
+- [x] Escolher e configurar a stack — **confirmada:** React + Vite + Tailwind / Node.js + Express + Prisma / JWT + bcrypt
 - [ ] Criar repositório no GitHub com estrutura inicial (backend/ e frontend/)
 - [ ] Criar board Kanban
 - [ ] Escrever o backlog inicial da Fase 1
