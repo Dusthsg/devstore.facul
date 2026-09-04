@@ -1,0 +1,3 @@
+# Pasta de services
+# Aqui fica a regra de negócio de verdade — controllers não devem ter lógica, só orquestrar.
+# Ex: productService.js, authService.js, orderService.js

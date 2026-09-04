@@ -1,0 +1,3 @@
+# Pasta de rotas
+# Define os endpoints da API e qual controller cada um chama.
+# Ex: productRoutes.js, authRoutes.js, orderRoutes.js

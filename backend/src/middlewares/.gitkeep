@@ -1,0 +1,3 @@
+# Pasta de middlewares
+# Funções que rodam entre a requisição e o controller.
+# Ex: authMiddleware.js (verifica token JWT), errorHandler.js, logger.js

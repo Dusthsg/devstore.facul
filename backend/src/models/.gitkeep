@@ -1,0 +1,3 @@
+# Pasta de models
+# Schemas/modelos de dados. Se usar Prisma, o schema principal fica em prisma/schema.prisma
+# e esta pasta pode conter tipos/validações adicionais.

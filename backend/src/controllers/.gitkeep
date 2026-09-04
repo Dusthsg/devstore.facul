@@ -1,0 +1,3 @@
+# Pasta de controllers
+# Cada controller recebe a requisição HTTP, chama o service correspondente e devolve a resposta.
+# Ex: productController.js, authController.js, orderController.js
