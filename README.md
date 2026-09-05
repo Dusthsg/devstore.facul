@@ -21,6 +21,7 @@ Cada pasta (`backend/`, `frontend/`) tem seu próprio README com instruções de
 - [Backlog inicial (Fase 1)](./docs/backlog.md) — histórias de usuário para a Sprint Planning
 - [Definition of Done](./docs/definition-of-done.md) — o que significa uma tarefa estar realmente concluída
 - [Template de ADR](./docs/decisions/ADR-template.md) — modelo para registrar decisões técnicas importantes
+- [COLABORADORES.md](./COLABORADORES.md) — lista de quem contribui com o projeto
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — Regras de Git, branches e commits
 
 ## Equipe
