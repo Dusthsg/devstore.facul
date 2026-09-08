@@ -26,11 +26,11 @@ Times fixos do início ao fim fazem cada pessoa aprender só uma fatia do sistem
 ```
 ┌─────────────────────┐    ┌─────────────────────┐
 │      BACKEND        │    │      FRONTEND       │
-│  Ryan (coringa)      │    │  Bruno                │
-│  Edmilson              │    │  João                  │
-│  Luna                    │    │  Danilo                 │
-│  Luiz                      │    │  Guilherme               │
-│                              │    │  Aldi                      │
+│  Ryan               │    │  Bruno              │
+│  Edmilson           │    │  João               │
+│  Luna               │    │  Danilo             │
+│  Luiz               │    │  Guilherme          │
+│                     │    │  Aldi               │
 └─────────────────────┘    └─────────────────────┘
            │                         │
            └───────────┬─────────────┘
