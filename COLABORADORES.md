@@ -7,3 +7,5 @@ Cada pessoa do time adiciona uma linha abaixo com seu nome e o link do perfil do
 | Foto | Nome | GitHub |
 |---|---|---|
 | <img src="https://github.com/Dusthsg.png" width="60"> | Ryan Ramos | [@Dusthsg](https://github.com/Dusthsg) |
+| <img src="https://github.com/edm465264-hash.png" width="60"> | Ryan Ramos | [@edmilson](https://github.com/edm465264-hash) |
+
