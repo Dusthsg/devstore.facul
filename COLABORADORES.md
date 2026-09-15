@@ -7,5 +7,4 @@ Cada pessoa do time adiciona uma linha abaixo com seu nome e o link do perfil do
 | Foto | Nome | GitHub |
 |---|---|---|
 | <img src="https://github.com/Dusthsg.png" width="60"> | Ryan Ramos | [@Dusthsg](https://github.com/Dusthsg) |
-
 | <img src="https://github.com/Diego.png" width="60"> | Ryan Ramos | [diegosilva5054-netizen](diegosilva5054-netizen) |
