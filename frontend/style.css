@@ -1,0 +1,188 @@
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F3F4F6;
+    color:#1F2937;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho{
+    background:#1E3A8A;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 40px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-circle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:white;
+    color:#1E3A8A;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.logo h1{
+    margin:0;
+    color:white;
+    font-size:32px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#DBEAFE;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main{
+    padding:0;
+}
+
+h2{
+    color:#1E3A8A;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+    height:320px;
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 60px;
+}
+
+.banner-texto h2{
+    color:white;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.banner-texto p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.banner button{
+    background:white;
+    color:#1E3A8A;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.banner button:hover{
+    background:#DBEAFE;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos{
+    padding:50px;
+}
+
+.produtos h2{
+    margin-bottom:30px;
+}
+
+#produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background:white;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.imagem-produto{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.card span{
+    display:block;
+    font-size:22px;
+    font-weight:bold;
+    color:#2563EB;
+    margin-bottom:18px;
+}
+
+.card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#1E3A8A;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#2563EB;
+}
