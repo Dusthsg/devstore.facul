@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            TechStore
+        </div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <button class="botao-carrinho" onclick="abrirCarrinho()">
+            🛒 Carrinho
+            <span id="quantidade-carrinho">0</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- BANNER -->
+        <section class="hero">
+
+            <div>
+
+                <h1>
+                    Tecnologia para
+                    o seu dia a dia
+                </h1>
+
+                <p>
+                    Encontre produtos de tecnologia
+                    com qualidade e preço justo.
+                </p>
+
+                <a href="#produtos" class="botao-hero">
+                    Ver produtos
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section id="produtos" class="produtos">
+
+            <div class="titulo-secao">
+
+                <div>
+                    <h2>Produtos em destaque</h2>
+
+                    <p>
+                        Encontre o produto ideal para você.
+                    </p>
+                </div>
+
+                <!-- BUSCA -->
+                <input
+                    type="text"
+                    id="campo-busca"
+                    placeholder="Buscar produto..."
+                    oninput="buscarProdutos()"
+                >
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filtros">
+
+                <button onclick="filtrarCategoria('todos')">
+                    Todos
+                </button>
+
+                <button onclick="filtrarCategoria('notebook')">
+                    Notebooks
+                </button>
+
+                <button onclick="filtrarCategoria('celular')">
+                    Celulares
+                </button>
+
+                <button onclick="filtrarCategoria('acessorio')">
+                    Acessórios
+                </button>
+
+            </div>
+
+
+            <!-- LISTA DE PRODUTOS -->
+            <div class="lista-produtos" id="lista-produtos">
+
+
+                <!-- NOTEBOOK -->
+                <div
+                    class="card"
+                    data-categoria="notebook"
+                    data-nome="Notebook Gamer"
+                >
+
+                    <div class="imagem-produto">
+
+                        <img
+                            src="imagens/notebook.png"
+                            alt="Notebook Gamer"
+                        >
+
+                    </div>
+
+                    <span class="categoria">
+                        Notebook
+                    </span>
+
+                    <h3>
+                        Notebook Gamer
+                    </h3>
+
+                    <p>
+                        Alto desempenho para estudos,
+                        trabalho e jogos.
+                    </p>
+
+                    <span class="preco">
+                        R$ 4.999,00
+                    </span>
+
+                    <button
+                        onclick="adicionarCarrinho(
+                            'Notebook Gamer',
+                            4999
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+
+                <!-- CELULAR -->
+                <div
+                    class="card"
+                    data-categoria="celular"
+                    data-nome="iPhone 18"
+                >
+
+                    <div class="imagem-produto">
+
+                        <img
+                            src="imagens/celular.png"
+                            alt="iPhone 18"
+                        >
+
+                    </div>
+
+                    <span class="categoria">
+                        Celular
+                    </span>
+
+                    <h3>
+                        iPhone 18
+                    </h3>
+
+                    <p>
+                        Desempenho, câmera de alta qualidade
+                        e muito mais.
+                    </p>
+
+                    <span class="preco">
+                        R$ 8.999,00
+                    </span>
+
+                    <button
+                        onclick="adicionarCarrinho(
+                            'iPhone 18',
+                            8999
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+
+                <!-- HEADSET -->
+                <div
+                    class="card"
+                    data-categoria="acessorio"
+                    data-nome="Headset Gamer"
+                >
+
+                    <div class="imagem-produto">
+
+                        <img
+                            src="imagens/headset.png"
+                            alt="Headset Gamer"
+                        >
+
+                    </div>
+
+                    <span class="categoria">
+                        Acessório
+                    </span>
+
+                    <h3>
+                        Headset Gamer
+                    </h3>
+
+                    <p>
+                        Som potente e confortável
+                        para jogos e músicas.
+                    </p>
+
+                    <span class="preco">
+                        R$ 299,00
+                    </span>
+
+                    <button
+                        onclick="adicionarCarrinho(
+                            'Headset Gamer',
+                            299
+                        )"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section id="sobre" class="sobre">
+
+            <h2>
+                Sobre a TechStore
+            </h2>
+
+            <p>
+                Uma loja virtual criada para praticar
+                HTML, CSS e JavaScript.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL DO CARRINHO -->
+    <div
+        id="modal-carrinho"
+        class="modal"
+    >
+
+        <div class="carrinho">
+
+            <button
+                class="fechar"
+                onclick="fecharCarrinho()"
+            >
+                ✕
+            </button>
+
+            <h2>
+                Meu Carrinho
+            </h2>
+
+            <div id="itens-carrinho">
+
+                <p>
+                    Seu carrinho está vazio.
+                </p>
+
+            </div>
+
+            <div class="total">
+
+                <strong>
+                    Total:
+                </strong>
+
+                <span id="total-carrinho">
+                    R$ 0,00
+                </span>
+
+            </div>
+
+            <button
+                class="finalizar"
+                onclick="finalizarCompra()"
+            >
+                Finalizar compra
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <strong>
+            TechStore
+        </strong>
+
+        <span>
+            Projeto acadêmico - HTML, CSS e JavaScript
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
