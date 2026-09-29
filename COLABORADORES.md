@@ -13,3 +13,4 @@ Cada pessoa do time adiciona uma linha abaixo com seu nome e o link do perfil do
 | <img src="https://github.com/joaofox768-arch.png" width="60"> | João | [@joaofox786](https://github.com/joaofox768-arch) | 
 | <img src="https://github.com/guizinhoqs.png" width="60"> | guilherme| [@guizinhoqs](https://github.com/guizinhoqs) | 
 | <img src="https://github.com/camargoluna106-commits.png" width="60"> | Luna| [@camargoluna](https://github.com/camargoluna106-commits) | 
+| <img src="https://github.com/brunosilvamnj-eng.png" width="60"> | Bruno| [@Bruno](https://github.com/brunosilvamnj-eng) | 
